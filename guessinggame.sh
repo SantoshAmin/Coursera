@@ -1,12 +1,12 @@
 #!/bin/sh
 
-function guess {
+function guessgame {
 echo "Enter number of files in directory"
 read number
 fileno=$(ls -1 | wc -l)
 }
 
-guess
+guessgame
 
 while [[ $number>0 ]]
 do 
@@ -20,5 +20,5 @@ else
 echo "Congratulations !!! Hou have guessed correct number"
 exit 0
 fi
-guess
+guessgame
 done
